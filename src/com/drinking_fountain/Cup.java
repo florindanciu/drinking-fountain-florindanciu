@@ -4,9 +4,13 @@ import java.util.Random;
 
 public class Cup {
 
-    private final int volume;
+    private int volume;
 
     public Cup() {
+        setRandomVolume();
+    }
+
+    private void setRandomVolume() {
         Random random = new Random();
         this.volume = random.nextInt(10);
     }

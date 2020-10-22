@@ -11,14 +11,13 @@ public class Main {
         Student student3 = new Student("Mike", new Cup());
         Student student4 = new Student("John", new Cup());
         Student student5 = new Student("Bill", new Cup());
+        Student student6 = new Student("George", new Cup());
 
-        distributor.requestDrink(student1, student1.getCup(), new Drink(Type.HOT_NORMAL, Size.MEDIUM));
-        distributor.requestDrink(student2, student2.getCup(), new Drink(Type.COLD_NORMAL, Size.SMALL));
-        distributor.requestDrink(student3, student3.getCup(), new Drink(Type.HOT_NORMAL, Size.LARGE));
-        distributor.requestDrink(student4, student4.getCup(), new Drink(Type.COLD_FIZZY, Size.MEDIUM));
-        distributor.requestDrink(student5, student5.getCup(), new Drink(Type.HOT_NORMAL, Size.LARGE));
-
-
-
+        distributor.requestDrink(student1, new Drink(Type.HOT_NORMAL, Size.MEDIUM));
+        distributor.requestDrink(student2, new Drink(Type.COLD_NORMAL, Size.SMALL));
+        distributor.requestDrink(student3, new Drink(Type.HOT_NORMAL, Size.LARGE));
+        distributor.requestDrink(student4, new Drink(Type.COLD_FIZZY, Size.MEDIUM));
+        distributor.requestDrink(student5, new Drink(Type.HOT_NORMAL, Size.LARGE));
+        distributor.requestDrink(student6, new Drink(Type.HOT_NORMAL, Size.LARGE));
     }
 }

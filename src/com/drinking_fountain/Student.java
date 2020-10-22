@@ -2,8 +2,8 @@ package com.drinking_fountain;
 
 public class Student {
 
+    private final String name;
     private final Cup cup;
-    private String name;
 
     public Student(String name, Cup cup) {
         this.cup = cup;
