@@ -5,13 +5,13 @@ public enum Size {
     MEDIUM(3),
     LARGE(5);
 
-    private final int dl;
+    private final int value;
 
-    Size(int dl) {
-        this.dl = dl;
+    Size(int value) {
+        this.value = value;
     }
 
-    public int getDl() {
-        return this.dl;
+    public int getValue() {
+        return this.value;
     }
 }
